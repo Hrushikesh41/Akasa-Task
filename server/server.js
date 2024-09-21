@@ -25,6 +25,7 @@ env.config({path : 'config.env'})
 const port = process.env.PORT || 3001
 
 app.use(require("./routes/register"))
+app.use(require("./routes/products"))
 
 app.get('/', (req, res)=>{
     res.send("hello")
