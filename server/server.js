@@ -24,6 +24,8 @@ app.use(function (req, res, next) {
 env.config({path : 'config.env'})
 const port = process.env.PORT || 3001
 
+app.use(require("./routes/register"))
+
 app.get('/', (req, res)=>{
     res.send("hello")
 });
