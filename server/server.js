@@ -1,6 +1,9 @@
 const express = require('express');
 const env = require('dotenv');
 const cors = require("cors")
+require("./db/conn")
+const userModel = require("./models/user.model")
+const productModel = require("./models/product.model")
 
 const app = express();
 
