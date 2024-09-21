@@ -30,6 +30,15 @@ userSchema.pre("save", async function(next){
     next();
 });
 
+userSchema.methods.generateAuthToken = async function(){
+    try{
+        const token = jwt.sign({_id : this._id}, process.env.SECRET_KEY);
+        return token
+    }catch(e){
+        console.log(e);
+    }
+}
+
 
 const userModels = new mongoose.model("CUSTOMERS", userSchema);
 
