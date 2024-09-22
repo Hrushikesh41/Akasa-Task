@@ -84,7 +84,7 @@ const Register = () => {
                     progress: undefined,
                 });
 
-                navigate("/login", {replace: true});
+                navigate("/verify", {replace: true});
             } else {
                 toast.error('Error Occurred !!!', {
                     position: "top-right",
