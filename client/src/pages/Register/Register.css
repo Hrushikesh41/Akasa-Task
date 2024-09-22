@@ -1,0 +1,171 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.container .left_inner_container{
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #5800FF;
+}
+
+.left_inner_container .user_inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.user_inputs .form_inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_inputs input{
+    padding: 0.7rem;
+    background-color: #5800FF;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    width: 60%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.form_inputs input::placeholder{
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.form_inputs .redirect{
+    margin-top: 1rem;
+    padding: 0.7rem;
+    border-radius: 10px;
+    width: 63%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.redirect a{
+    text-decoration: underline;
+    color: #fff;
+    font-weight: bold;
+}
+
+.form_inputs .submit_data{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_inputs .submit_data button{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0.7rem;
+    width: 20%;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.container .right_inner_container{
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right_inner_container img{
+    height: 90%;
+    width: 100%;
+}
+
+@media (min-width : 300px) and (max-width : 400px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .container .left_inner_container{
+        width: 100%;
+    }
+
+    .form_inputs{
+        margin-bottom: 1rem;
+    }
+
+    .form_inputs input{
+        width: 70%;
+    }
+
+    .form_inputs .submit_data button {
+        width: 30%;
+    }
+
+    .container .right_inner_container{
+        width: 100%;
+    }
+}
+
+@media (min-width : 401px) and (max-width : 450px){
+    .container{
+        flex-direction: column;
+    }
+
+    .container .left_inner_container{
+        width: 100%;
+    }
+
+    .form_inputs{
+        margin-bottom: 1rem;
+    }
+
+    .form_inputs input{
+        width: 70%;
+    }
+
+    .container .right_inner_container{
+        width: 100%;
+    }
+}
+
+@media (min-width : 501px) and (max-width : 900px){
+    .container{
+        flex-direction: column;
+    }
+
+    .container .left_inner_container{
+        width: 100%;
+    }
+
+    .form_inputs{
+        margin-bottom: 1rem;
+    }
+
+    .form_inputs input{
+        width: 70%;
+    }
+
+    .container .right_inner_container{
+        width: 100%;
+    }
+}

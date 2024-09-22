@@ -27,6 +27,7 @@ const port = process.env.PORT || 3001
 app.use(require("./routes/register"))
 app.use(require("./routes/products"))
 app.use(require("./routes/login"))
+app.use(require("./routes/cart"))
 
 app.get('/', (req, res)=>{
     res.send("hello")
