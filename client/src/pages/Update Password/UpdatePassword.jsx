@@ -8,15 +8,6 @@ const UpdatePassword = () => {
     const navigate = useNavigate();
     const [email, setEmail] = useState();
 
-    // useEffect(() => {
-    //     const token = localStorage.getItem("token");
-    //     console.log(token);
-
-    //     if (token != null || token || token != undefined) {
-    //         navigate("/", { replace: true })
-    //     }
-    // });
-
     const handleChange = (e) => {
         e.preventDefault();
         setEmail(e.target.value);

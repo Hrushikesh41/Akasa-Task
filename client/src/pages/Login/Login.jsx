@@ -61,7 +61,7 @@ const Login = ()=>{
                     draggable: true,
                     progress: undefined,
                 });
-                // navigate(`/`, {replace : true})
+                navigate(`/`, {replace : true})
             }else{
                 toast.error('Invalid Credentials', {
                     position: "top-right",

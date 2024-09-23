@@ -42,8 +42,9 @@ router.get("/product", async(req, res)=>{
 
 router.post("/product_id", async(req, res)=>{
     const {productID} = req.body;
+    console.log(productID)
     try {
-        const product = await ProductModel.findOne({productID:productID});
+        const product = await ProductModel.findOne({_id:productID});
         return res.status(200).json({product : product})
     } catch (error) {
         console.log(error);

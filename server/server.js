@@ -29,6 +29,7 @@ app.use(require("./routes/products"))
 app.use(require("./routes/login"))
 app.use(require("./routes/cart"))
 app.use(require("./routes/UpdatePassword"))
+app.use(require("./routes/orders"))
 
 app.get('/', (req, res)=>{
     res.send("hello")

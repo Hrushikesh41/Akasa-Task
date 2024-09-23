@@ -20,6 +20,14 @@ const userSchema = new mongoose.Schema({
         {
             type : String
         }
+    ],
+    orderID : {
+        type : String
+    },
+    orders : [
+        {
+            type : String
+        }
     ]
 })
 

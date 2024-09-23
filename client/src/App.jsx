@@ -7,6 +7,8 @@ import Verify from './pages/Verify/Verify'
 import UpdatePassword from "./pages/Update Password/UpdatePassword"
 import NewPassword from "./pages/Update Password/NewPassword"
 import VerifyOtp from './pages/Update Password/VerifyOtp'
+import Home from './pages/Home/Home'
+import Cart from './pages/Cart/Cart'
 
 function App() {
 
@@ -14,12 +16,14 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route exact path='/' element={<Register />} />
+          <Route exact path='/' element={<Home />} />
+          <Route exact path='/register' element={<Register />} />
           <Route exact path='/verify' element={<Verify />} />
           <Route exact path='/login' element={<Login />} />
           <Route exact path='/update' element={<UpdatePassword />} />
           <Route exact path='/auth' element={<VerifyOtp />} />
           <Route exact path='/new' element={<NewPassword />} />
+          <Route exact path='/cart' element={<Cart />} />
         </Routes>
       </BrowserRouter>
     </>
