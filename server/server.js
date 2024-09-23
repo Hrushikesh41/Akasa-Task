@@ -16,7 +16,7 @@ app.use(function (req, res, next) {
   });
 
   app.use(cors({
-    origin: ["http://localhost:3000", "http://localhost:5173", "*"],
+    origin: ["https://foodsys.onrender.com", "http://localhost:3000", "http://localhost:5173", "*"],
     methods: ["GET", "POST"],
     credentials: true
 }))

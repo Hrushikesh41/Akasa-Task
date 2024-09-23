@@ -27,7 +27,7 @@ export const NewPassword = () => {
                 progress: undefined,
             });
         }else{
-            const res = await fetch("http://localhost:3000/newpassword", {
+            const res = await fetch("https://foodsys.onrender.com/newpassword", {
                 method : "POST",
                 headers : {
                     "Content-Type" : "application/json"

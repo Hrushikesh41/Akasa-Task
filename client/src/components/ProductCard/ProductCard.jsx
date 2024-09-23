@@ -19,7 +19,7 @@ const ProductCard = (productDetail) => {
 
     const userID = localStorage.getItem("ID")
     const addToCart = async () => {
-        const res = await fetch("http://localhost:3000/cart", {
+        const res = await fetch("https://foodsys.onrender.com/cart", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

@@ -9,7 +9,7 @@ const Home = () => {
 
     const getProducts = async () => {
         try {
-            const res = await fetch("http://localhost:3000/product");
+            const res = await fetch("https://foodsys.onrender.com/product");
             const data = await res.json();
             console.log(data);
             if (res.status == 200) {

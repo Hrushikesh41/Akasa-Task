@@ -26,7 +26,7 @@ const UpdatePassword = () => {
                 progress: undefined,
             });
         } else {
-            const res = await fetch("http://localhost:3000/update", {
+            const res = await fetch("https://foodsys.onrender.com/update", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

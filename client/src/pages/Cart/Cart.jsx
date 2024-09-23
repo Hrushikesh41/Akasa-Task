@@ -19,7 +19,7 @@ const Cart = () => {
         token = localStorage.getItem("ID")
         setID(token)
         console.log(id)
-        const res = await fetch("http://localhost:3000/cartProducts", {
+        const res = await fetch("https://foodsys.onrender.com/cartProducts", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -45,7 +45,7 @@ const Cart = () => {
         if (product && product.length > 0) {
             product.map(async (productID, key) => {
                 console.log("Hello");
-                const res = await fetch("http://localhost:3000/product_id", {
+                const res = await fetch("https://foodsys.onrender.com/product_id", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"
@@ -62,7 +62,7 @@ const Cart = () => {
     }, [product]);
 
     const handleClick = async () => {
-        const res = await fetch("http://localhost:3000/order", {
+        const res = await fetch("https://foodsys.onrender.com/order", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

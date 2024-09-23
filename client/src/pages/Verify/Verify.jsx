@@ -27,7 +27,7 @@ const Verify = () => {
                 progress: undefined,
             });
         } else {
-            const res = await fetch("http://localhost:3000/verifyotp", {
+            const res = await fetch("https://foodsys.onrender.com/verifyotp", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

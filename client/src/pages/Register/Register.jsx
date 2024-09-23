@@ -61,7 +61,7 @@ const Register = () => {
 
             const { name, email, password } = details;
 
-            const res = await fetch("http://localhost:3000/customer", {
+            const res = await fetch("https://foodsys.onrender.com/customer", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
