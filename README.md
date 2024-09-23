@@ -18,6 +18,6 @@ Completely Responsive
 **hhttps://foodsys.netlify.app/**
 
 
-# Scan QR Code To Visit Resume Builder
+# Scan QR Code To Visit FoodSys Website
 
 ![FoodSys QR](https://github.com/Hrushikesh41/Akasa-Task/blob/main/QRCode_download.png?raw=true)
