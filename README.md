@@ -10,9 +10,6 @@ Technology Used :
 3. Nodejs
 4. MongoDB
 
-
-Completely Responsive 
-
 # URL for Website
 
 **hhttps://foodsys.netlify.app/**
