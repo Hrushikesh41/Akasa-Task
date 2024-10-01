@@ -12,7 +12,7 @@ Technology Used :
 
 # URL for Website
 
-**hhttps://foodsys.netlify.app/**
+**https://foodsys.netlify.app/**
 
 
 # Scan QR Code To Visit FoodSys Website
