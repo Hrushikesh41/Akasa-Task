@@ -14,7 +14,8 @@ const Navbar = () => {
 
     const handleChange = () => {
         localStorage.removeItem("token");
-        localStorage.removeItem("ID")
+        localStorage.removeItem("ID");
+        window.location.reload();
     }
 
     const handleClick = ()=>{
