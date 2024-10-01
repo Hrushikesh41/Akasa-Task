@@ -145,7 +145,7 @@ const Register = () => {
                             />
 
                             <div className="redirect">
-                                <a href="/login">Already a Customer</a>
+                                <a href="https://foodsys.netlify.app/login">Already a Customer</a>
                             </div>
 
                             <div className="submit_data">
